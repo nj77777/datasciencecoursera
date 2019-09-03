@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function sets and gets the vector and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
@@ -19,8 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## This function calculates the inverse mean of the special "vector" created with the above function. 
+## It first checks to see if the inverse has already been calculated. 
+## It calculates the inverse of the data and sets the value of the mean in the cache via the setinverse function
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
     i <- x$getinverse()
